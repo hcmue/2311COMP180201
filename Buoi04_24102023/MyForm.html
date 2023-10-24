@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+<body>
+    <div>
+        <h2>ĐĂNG KÝ NHẬP HỌC</h2>
+        <form action="XuLyNhapHoc.php" method="get">
+        <div>
+            Họ tên: <input name="hoten" required />
+        </div>
+        <div>
+            Mật khẩu: <input name="matkhau" required type="password" />
+        </div>
+        <div>
+            Giới tính:
+            <input type="radio" name="gioitinh" value="0">Nam
+            <input type="radio" name="gioitinh" value="1" checked>Nữ
+            <input type="radio" name="gioitinh" value="-1">Khác
+        </div>
+        <div>
+            Đồng ý không?
+            <input type="radio" value="1" name="confirm">Yes
+            <input type="radio" value="0" name="confirm">No
+        </div>
+        <div>
+            Sở thích:
+            <input type="checkbox" value="Ăn">Ăn
+            <input type="checkbox" value="Ngủ">Ngủ
+            <input type="checkbox" value="Du lịch">Du lịch
+            <input type="checkbox" value="Thể thao">Thể thao
+        </div>
+        <div>
+            Quê quán:
+            <select name="quequan">
+                <option value="HN">Hà Nội</option>
+                <option value="HCM">Hồ Chí Minh</option>
+                <option value="CT">Cần Thơ</option>
+                <option value="DN">Đà Nẵng</option>
+                <option value="HUE">Huế</option>
+                <option value="NT">Nha Trang</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="thongtin" rows="10">
+            </textarea>           
+        </div>
+
+        <button>Đăng ký</button>
+        <button type="reset">Nhập lại</button>
+        </form>
+    </div>
+</body>
+</html>
